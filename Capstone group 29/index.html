@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dɛɛdɛw Recipes - Find Recipes With Your Ingredients</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- ===========================
+         HEADER
+    =========================== -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <a href="#home" class="logo">Dɛɛdɛw Recipes</a>
+
+                <!-- Desktop Navigation -->
+                <nav class="nav desktop-nav">
+                    <a href="#home"       class="nav-link">Home</a>
+                    <a href="#categories" class="nav-link">Categories</a>
+                    <a href="#recipes"    class="nav-link">All Recipes</a>
+                    <a href="#about"      class="nav-link">About</a>
+                </nav>
+
+                <!-- Mobile Menu Button -->
+                <button class="mobile-menu-btn" id="mobile-menu-btn" aria-label="Toggle menu">
+                    <span class="hamburger"></span>
+                </button>
+            </div>
+
+            <!-- Mobile Navigation -->
+            <nav class="nav mobile-nav" id="mobile-nav">
+                <a href="#home"       class="nav-link">Home</a>
+                <a href="#categories" class="nav-link">Categories</a>
+                <a href="#recipes"    class="nav-link">All Recipes</a>
+                <a href="#about"      class="nav-link">About</a>
+            </nav>
+        </div>
+    </header>
+
+
+    <!-- ===========================
+         MAIN — all pages live here
+    =========================== -->
+    <main id="app">
+
+
+        <!-- ============================================
+             PAGE: HOME
+        ============================================ -->
+        <section id="page-home" class="page">
+
+            <!-- Hero -->
+            <section class="hero">
+                <div class="container">
+                    <h1>Find Recipes With Ingredients You Already Have</h1>
+                    <p class="hero-description">
+                        Enter your ingredients and discover delicious recipes — from everyday meals
+                        to authentic Ghanaian dishes. Save time, reduce waste, and cook with confidence.
+                    </p>
+
+                    <!-- Ingredient Finder -->
+                    <div class="ingredient-finder">
+                        <div class="ingredient-input-group">
+                            <input
+                                type="text"
+                                id="ingredient-input"
+                                class="ingredient-input"
+                                placeholder="Enter an ingredient (e.g. tomato, yam, egg)"
+                            />
+                            <button class="btn btn-primary" onclick="addIngredient()">
+                                <svg class="icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4"/>
+                                </svg>
+                                Add Ingredient
+                            </button>
+                        </div>
+
+                        <!-- Ingredient tags injected here by app.js -->
+                        <div id="ingredient-tags" class="ingredient-tags"></div>
+
+                        <button class="btn btn-secondary btn-full" onclick="findRecipes()">
+                            <svg class="icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/>
+                            </svg>
+                            Find Recipes
+                        </button>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Recipe Results -->
+            <section class="recipe-section">
+                <div class="container">
+                    <h2 id="results-title">Popular Recipes</h2>
+                    <p class="recipe-section-description" id="results-description">
+                        Get started by adding ingredients above
+                    </p>
+                    <!-- Recipe cards injected here by app.js -->
+                    <div id="recipe-results" class="recipe-grid"></div>
+                </div>
+            </section>
+
+        </section>
+        <!-- END PAGE: HOME -->
+
+
+        <!-- ============================================
+             PAGE: CATEGORIES
+        ============================================ -->
+        <section id="page-categories" class="page">
+            <div class="recipe-section">
+                <div class="container">
+                    <h2>Recipe Categories</h2>
+                    <p class="recipe-section-description">Browse recipes by meal type</p>
+
+                    <!-- Category cards injected by app.js -->
+                    <div id="category-grid" class="category-grid"></div>
+                </div>
+            </div>
+        </section>
+        <!-- END PAGE: CATEGORIES -->
+
+
+        <!-- ============================================
+             PAGE: CATEGORY DETAIL
+        ============================================ -->
+        <section id="page-category-detail" class="page">
+            <div class="recipe-section">
+                <div class="container">
+
+                    <a href="#categories" class="back-btn">
+                        <svg class="icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"/>
+                        </svg>
+                        Back to Categories
+                    </a>
+
+                    <!-- Filled by app.js -->
+                    <h2 id="category-detail-title"></h2>
+                    <p class="recipe-section-description" id="category-detail-count"></p>
+
+                    <!-- Recipe cards injected by app.js -->
+                    <div id="category-detail-grid" class="recipe-grid"></div>
+
+                </div>
+            </div>
+        </section>
+        <!-- END PAGE: CATEGORY DETAIL -->
+
+
+        <!-- ============================================
+             PAGE: ALL RECIPES
+        ============================================ -->
+        <section id="page-recipes" class="page">
+            <div class="recipe-section">
+                <div class="container">
+                    <h2>All Recipes</h2>
+                    <!-- Count filled by app.js -->
+                    <p class="recipe-section-description" id="all-recipes-count"></p>
+
+                    <!-- Recipe cards injected by app.js -->
+                    <div id="all-recipes-grid" class="recipe-grid"></div>
+                </div>
+            </div>
+        </section>
+        <!-- END PAGE: ALL RECIPES -->
+
+
+        <!-- ============================================
+             PAGE: RECIPE DETAIL
+        ============================================ -->
+        <section id="page-recipe-detail" class="page">
+            <section class="recipe-details">
+                <div class="container">
+
+                    <a href="#home" class="back-btn" id="recipe-back-btn">
+                        <svg class="icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"/>
+                        </svg>
+                        Back to Recipes
+                    </a>
+
+                    <!-- Recipe header — text filled by app.js -->
+                    <div class="recipe-header">
+                        <h1 id="recipe-detail-name"></h1>
+                        <div class="recipe-meta">
+                            <span id="recipe-detail-time"></span>
+                            <span id="recipe-detail-category"></span>
+                            <!-- Ghana badge shown/hidden by app.js -->
+                            <span id="recipe-detail-ghana" style="display:none;background:#C8960C;color:#fff;padding:0.2rem 0.75rem;border-radius:20px;font-size:0.85rem;font-weight:600">
+                                🇬🇭 Ghanaian
+                            </span>
+                        </div>
+                        <p class="recipe-description" id="recipe-detail-description"></p>
+                    </div>
+
+                    <!-- Recipe image — src set by app.js -->
+                    <img
+                        id="recipe-detail-image"
+                        src=""
+                        alt=""
+                        class="recipe-image-large"
+                        onerror="this.style.display='none';document.getElementById('recipe-detail-placeholder').style.display='flex'"
+                    />
+                    <!-- Fallback emoji plate if image fails -->
+                    <div id="recipe-detail-placeholder" class="recipe-image-placeholder" style="display:none">
+                        🍲
+                    </div>
+
+                    <!-- Recipe content — lists filled by app.js -->
+                    <div class="recipe-content">
+
+                        <div class="recipe-ingredients">
+                            <h2>Ingredients</h2>
+                            <ul id="recipe-detail-ingredients">
+                                <!-- <li> items injected by app.js -->
+                            </ul>
+                        </div>
+
+                        <div class="recipe-instructions">
+                            <h2>Instructions</h2>
+                            <ol id="recipe-detail-instructions">
+                                <!-- <li> items injected by app.js -->
+                            </ol>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+        </section>
+        <!-- END PAGE: RECIPE DETAIL -->
+
+
+        <!-- ============================================
+             PAGE: ABOUT
+        ============================================ -->
+        <section id="page-about" class="page">
+            <section class="about-section">
+                <div class="container about-content">
+
+                    <h1>About Dɛɛdɛw Recipes</h1>
+
+                    <p>
+                        Welcome to Dɛɛdɛw Recipes — your kitchen companion for finding delicious
+                        meals using ingredients you already have at home or hostel, with a special focus on
+                        authentic Ghanaian cuisine.
+                    </p>
+
+                    <h2>Our Mission</h2>
+                    <p>
+                        We believe cooking should be accessible, creative, and waste-free. Our platform
+                        helps you discover amazing recipes based on what's already in your pantry —
+                        from quick weekday meals to traditional Ghanaian dishes.
+                    </p>
+
+                    <h2>Who We Serve</h2>
+                    <ul>
+                        <li><strong>Students:</strong> Quick, budget-friendly meals with minimal ingredients</li>
+                        <li><strong>Busy Professionals:</strong> Fast recipes that fit your schedule</li>
+                        <li><strong>Beginner Cooks:</strong> Simple instructions and easy-to-follow recipes</li>
+                        <li><strong>Families:</strong> Delicious meals that everyone will love</li>
+                        <li><strong>Ghanaian Food Lovers:</strong> Traditional dishes from across Ghana</li>
+                        <li><strong>Health-Conscious Individuals:</strong> Nutritious options for a balanced lifestyle</li>
+                    </ul>
+
+                    <h2>Features</h2>
+                    <ul>
+                        <li>Ingredient-based recipe search</li>
+                        <li>Browse by categories including a dedicated Ghanaian dishes section</li>
+                        <li>Detailed step-by-step cooking instructions</li>
+                        <li>Food photography from real dishes</li>
+                        <li>Mobile-friendly responsive design</li>
+                    </ul>
+
+                    <h2>Get Started</h2>
+                    <p>
+                        Simply enter the ingredients you have and we'll show you delicious recipes. No more wondering "what's for dinner?"
+                    </p>
+
+                </div>
+            </section>
+        </section>
+        <!-- END PAGE: ABOUT -->
+
+
+        <!-- ============================================
+             PAGE: 404
+        ============================================ -->
+        <section id="page-404" class="page">
+            <div class="recipe-section">
+                <div class="container">
+                    <div class="empty-state">
+                        <div class="empty-state-icon">🔍</div>
+                        <h2>Page Not Found</h2>
+                        <p>Sorry, the page you're looking for doesn't exist.</p>
+                        <a href="#home" class="btn btn-primary" style="margin-top:1.5rem;display:inline-flex">
+                            Go Home
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- END PAGE: 404 -->
+
+
+    </main>
+    <!-- END MAIN -->
+
+
+    <!-- ===========================
+         FOOTER
+    =========================== -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 Dɛɛdɛw Recipes. All rights reserved.</p>
+        </div>
+    </footer>
+
+
+    <script src="data.js"></script>
+    <script src="app.js"></script>
+
+</body>
+</html>
