@@ -1,13 +1,11 @@
-// ============================================================
 // app.js — Router + Dynamic Data Only
-// ============================================================
 
 
-// ===== STATE =====
+// STATE 
 let currentIngredients = [];
 
 
-// ===== PAGE IDs =====
+//PAGE IDs
 const ALL_PAGES = [
     'page-home',
     'page-categories',
@@ -19,9 +17,8 @@ const ALL_PAGES = [
 ];
 
 
-// ============================================================
 // INITIALISE
-// ============================================================
+
 document.addEventListener('DOMContentLoaded', () => {
     initMobileMenu();
     initRouter();
@@ -29,9 +26,7 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 
-// ============================================================
 // ROUTER
-// ============================================================
 function initRouter() {
     window.addEventListener('hashchange', handleRoute);
 }
@@ -87,10 +82,8 @@ function handleRoute() {
 }
 
 
-// ============================================================
 // showPage
 // Hides every page section, then reveals only the one we want.
-// ============================================================
 function showPage(pageId) {
     ALL_PAGES.forEach(id => {
         const el = document.getElementById(id);
@@ -101,9 +94,8 @@ function showPage(pageId) {
 }
 
 
-// ============================================================
 // ACTIVE NAV LINKS
-// ============================================================
+
 function updateActiveNavLinks(route) {
     document.querySelectorAll('.nav-link').forEach(link => {
         const href = link.getAttribute('href').slice(1);
@@ -112,9 +104,8 @@ function updateActiveNavLinks(route) {
 }
 
 
-// ============================================================
 // MOBILE MENU
-// ============================================================
+
 function initMobileMenu() {
     const btn = document.getElementById('mobile-menu-btn');
     const nav = document.getElementById('mobile-nav');
@@ -124,9 +115,8 @@ function initMobileMenu() {
 }
 
 
-// ============================================================
 // HOME PAGE — ingredient input setup
-// ============================================================
+
 function setupIngredientInput() {
     const old = document.getElementById('ingredient-input');
     if (!old) return;
@@ -138,9 +128,7 @@ function setupIngredientInput() {
 }
 
 
-// ============================================================
 // CATEGORIES PAGE — fill the grid with category cards
-// ============================================================
 function populateCategoryGrid() {
     const grid = document.getElementById('category-grid');
     if (!grid) return;
@@ -155,9 +143,8 @@ function populateCategoryGrid() {
 }
 
 
-// ============================================================
 // CATEGORY DETAIL PAGE — fill title, count, and recipe grid
-// ============================================================
+
 function populateCategoryDetail(categoryName) {
     const titleEl = document.getElementById('category-detail-title');
     const countEl = document.getElementById('category-detail-count');
@@ -175,9 +162,8 @@ function populateCategoryDetail(categoryName) {
 }
 
 
-// ============================================================
 // ALL RECIPES PAGE — fill the full grid
-// ============================================================
+
 function populateAllRecipes() {
     const countEl = document.getElementById('all-recipes-count');
     const grid    = document.getElementById('all-recipes-grid');
@@ -188,9 +174,8 @@ function populateAllRecipes() {
 }
 
 
-// ============================================================
 // RECIPE DETAIL PAGE
-// ============================================================
+
 function populateRecipeDetail(recipeId) {
     const recipe = recipes.find(r => r.id === recipeId);
 
@@ -227,9 +212,8 @@ function populateRecipeDetail(recipeId) {
 }
 
 
-// ============================================================
 // RECIPE CARD TEMPLATE
-// ============================================================
+
 function createRecipeCard(recipe) {
     const isGhanaian = recipe.tags && recipe.tags.includes('ghanaian');
     const ghanaTag   = isGhanaian
@@ -260,9 +244,8 @@ function createRecipeCard(recipe) {
 }
 
 
-// ============================================================
 // INGREDIENT MANAGEMENT
-// ============================================================
+
 function addIngredient() {
     const input      = document.getElementById('ingredient-input');
     const ingredient = input.value.trim().toLowerCase();
@@ -347,9 +330,8 @@ function renderRecipeResults() {
 }
 
 
-// ============================================================
 // NAVIGATION HELPERS
-// ============================================================
+
 function navigateToRecipe(recipeId) {
     window.location.hash = `#recipe/${recipeId}`;
 }
