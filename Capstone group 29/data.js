@@ -1,11 +1,11 @@
-// ============================================================
-// data.js — All Recipes & Categories
-// ============================================================
+
+// All Recipes & Categories
+// A lot of the recipes were picked from food content creators on youtube (Sweet Adjeley, Original Mama Betty, Kiki Foods, ChefAbbys)
+
 
 const recipes = [
 
-  // ===== ORIGINAL RECIPES =====
-
+  // RECIPES
   {
     id: '1',
     name: 'Classic Scrambled Eggs',
@@ -970,7 +970,7 @@ const recipes = [
 ];
 
 
-// ===== CATEGORIES =====
+//CATEGORIES 
 const categories = [
   { name: 'Breakfast',     icon: '🍳',  description: 'Start your day right' },
   { name: 'Lunch',         icon: '🥗',  description: 'Midday meals' },
