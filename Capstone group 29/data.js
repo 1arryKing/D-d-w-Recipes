@@ -450,7 +450,7 @@ const recipes = [
   {
     id: '24',
     name: 'Banku and Tilapia',
-    image: 'https://www.startpage.com/av/proxy-image?piurl=https%3A%2F%2Fafrocipe.co.uk%2Fwp-content%2Fuploads%2F2024%2F12%2Fbanku-and-tilapia-768x768-1.png&sp=1774949084T423f20e4141824be161b9b96a24cf49afc672fa67d01e1c7880c15971a4afd7a',
+    image: 'https://afrocipe.co.uk/wp-content/uploads/2024/12/banku-and-tilapia-768x768-1.png',
     cookingTime: '1 hour 30 mins',
     category: 'Dinner',
     tags: ['ghanaian', 'traditional'],
@@ -549,7 +549,7 @@ const recipes = [
   {
     id: '29',
     name: 'Abenkwan (Palm Nut Soup)',
-    image: 'https://www.startpage.com/av/proxy-image?piurl=https%3A%2F%2Ftse2.mm.bing.net%2Fth%2Fid%2FOIP.p7TQ3egnOhRJuDSv8k1QTAHaFj%3Fpid%3DApi&sp=1774949368Ta7756ad33e81e30f5a502088aa4bd10dcb47ec672118c54d892783bc1d071913',
+    image: 'https://afrifoodnetwork.com/wp-content/uploads/2016/11/Abenkwan.jpg',
     cookingTime: '1 hour 30 mins',
     category: 'Dinner',
     tags: ['ghanaian', 'traditional'],
@@ -569,8 +569,8 @@ const recipes = [
 
   {
     id: '30',
-    name: 'Ghana Meat Pie',
-    image: 'https://www.startpage.com/av/proxy-image?piurl=https%3A%2F%2Ftse2.mm.bing.net%2Fth%2Fid%2FOIP.wbGOYW0ckCK_7Ra26LK91gHaEK%3Fpid%3DApi&sp=1774949470T5f8bf3fedbdf0413e8ad6b116674a6a4bc22cdad3d1afa0d01117ae9aa369acc',
+    name: 'Meat Pie',
+    image: 'https://kikifoodies.com/wp-content/uploads/2024/12/3A8364CE-2F40-4ABD-BD01-72AF8BF5CDEC.jpeg',
     cookingTime: '1 hour',
     category: 'Snacks',
     tags: ['ghanaian'],
@@ -591,7 +591,7 @@ const recipes = [
   {
     id: '31',
     name: 'Bofrot (Puff Puff)',
-    image: 'https://www.startpage.com/av/proxy-image?piurl=https%3A%2F%2Ftse2.explicit.bing.net%2Fth%2Fid%2FOIP.jiWqnmwVkwCA1L96l_jaDwHaE7%3Fpid%3DApi&sp=1774949501Tc77fb584b71d148a8ec815b68c98df9e166671c453381321658348040693ef58',
+    image: 'https://i0.wp.com/travelandmunchies.com/wp-content/uploads/2022/11/IMG_0039.jpg?resize=1536%2C1097&ssl=1',
     cookingTime: '40 mins',
     category: 'Snacks',
     tags: ['ghanaian'],
