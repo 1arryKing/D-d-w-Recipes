@@ -431,7 +431,7 @@ const recipes = [
   {
     id: '23',
     name: 'Waakye (Rice and Beans)',
-    image: 'https://www.startpage.com/av/proxy-image?piurl=https%3A%2F%2Ftse2.mm.bing.net%2Fth%2Fid%2FOIP.6b9jp8gNMrd-hhTgQ3UYCAHaFO%3Fpid%3DApi&sp=1774953106T49981237235bd2e8315dd4c6b9fc424e985b968eb64de03b4fedab607fc34a1b',
+    image: 'https://i.ytimg.com/vi/vusv9y-FWC4/maxresdefault.jpg',
     cookingTime: '1 hour',
     category: 'Lunch',
     tags: ['ghanaian', 'traditional'],
@@ -512,7 +512,7 @@ const recipes = [
   {
     id: '27',
     name: 'Omo Tuo (Rice Balls)',
-    image: 'https://www.startpage.com/av/proxy-image?piurl=https%3A%2F%2Ftse3.mm.bing.net%2Fth%2Fid%2FOIP.gX9lwre38jtsyxgY_qd1XQHaFj%3Fpid%3DApi&sp=1774953216T0a40dca2e3e635c7bf57aaeac01f3279d8f4a2238c5ca386c67efeabb04dd783',
+    image: 'https://i.ytimg.com/vi/fmBboU5nQus/maxresdefault.jpg',
     cookingTime: '40 mins',
     category: 'Lunch',
     tags: ['ghanaian', 'traditional'],
@@ -530,7 +530,7 @@ const recipes = [
   {
     id: '28',
     name: 'Tuo Zaafi (TZ)',
-    image: 'https://www.startpage.com/av/proxy-image?piurl=https%3A%2F%2Ftse4.mm.bing.net%2Fth%2Fid%2FOIP.R0m3oKzH8m1kMp-pgDgW8wHaIN%3Fpid%3DApi&sp=1774953247T4eb8da9363c8632135eaaf9e75423d7041b85f0211ece8082003be368199a4c2',
+    image: 'https://styleafrique.com/wp-content/uploads/2024/07/IMG-20230612-WA0023.jpg',
     cookingTime: '45 mins',
     category: 'Dinner',
     tags: ['ghanaian', 'traditional'],
@@ -611,7 +611,7 @@ const recipes = [
   {
     id: '32',
     name: 'Ampesi with Garden Egg Stew',
-    image: 'https://www.startpage.com/av/proxy-image?piurl=https%3A%2F%2Ftse3.mm.bing.net%2Fth%2Fid%2FOIP.vNYUcXMFo8wD1_PAdymVsQHaEK%3Fpid%3DApi&sp=1774949533T18fc558cb6f6c1d8236cb8bb3b03903eeb7cecdcb3e31db286d501de02455bdf',
+    image: 'https://kentetv.com/wp-content/uploads/2023/04/Ampesi.jpg',
     cookingTime: '50 mins',
     category: 'Lunch',
     tags: ['ghanaian', 'healthy'],
@@ -651,7 +651,7 @@ const recipes = [
   {
     id: '34',
     name: 'Red Red (Bean Stew with Plantain)',
-    image: 'https://www.startpage.com/av/proxy-image?piurl=https%3A%2F%2Ftse1.mm.bing.net%2Fth%2Fid%2FOIP.FKgae4dkEVk3BK9CJDBdGwHaEK%3Fpid%3DApi&sp=1774949635Td89573462c0f1ca676abb610c825db5e6d85f12bf04aacec7d44a707ebbc2579',
+    image: 'https://cdn.tasteatlas.com/images/dishes/beada8969d314075ae942ca030feed65.jpg?mw=1300',
     cookingTime: '1 hour',
     category: 'Lunch',
     tags: ['ghanaian', 'traditional'],
@@ -672,7 +672,7 @@ const recipes = [
   {
     id: '35',
     name: 'Tuna Fried Rice (Ghana Style)',
-    image: 'https://www.startpage.com/av/proxy-image?piurl=https%3A%2F%2Ftse3.mm.bing.net%2Fth%2Fid%2FOIP.lea9COnUwByO-vHYUE5wzgHaHa%3Fpid%3DApi&sp=1774949690Tac427a693c59640801b5202aa095deabb8e5cba431f10a70dfaab1b7334e7f4a',
+    image: 'https://thefastrecipe.com/wp-content/uploads/2022/08/tuna-fried-rice-bowl-800x1200.jpg',
     cookingTime: '30 mins',
     category: 'Lunch',
     tags: ['ghanaian'],
@@ -694,7 +694,7 @@ const recipes = [
   {
     id: '36',
     name: 'Abomu (Spicy Garden Egg Dip)',
-    image: 'https://www.startpage.com/av/proxy-image?piurl=https%3A%2F%2Fi.ytimg.com%2Fvi%2FpCIon4H7_xc%2Fmaxresdefault.jpg&sp=1774949840Tf65e1f211a66a7ba2b40f2d9c6a5ca8cfad9b699ffebca77f5efa188d97a0059',
+    image: 'https://i.ytimg.com/vi/AgAqoehwi0M/maxresdefault.jpg',
     cookingTime: '15 mins',
     category: 'Snacks',
     tags: ['ghanaian', 'traditional'],
@@ -713,7 +713,7 @@ const recipes = [
   {
     id: '37',
     name: 'Koko (Hausa Porridge)',
-    image: 'https://www.startpage.com/av/proxy-image?piurl=https%3A%2F%2Ftse4.mm.bing.net%2Fth%2Fid%2FOIP.M2QXkByUbY0YnvTsw_GwWAHaEK%3Fpid%3DApi&sp=1774949930T60b177bd1c59e67c93f4b65d4fc32826db8bbbd6d7c7c7cb9e290fd27701fe17',
+    image: 'https://i.ytimg.com/vi/uekX6JTUJto/maxresdefault.jpg',
     cookingTime: '30 mins',
     category: 'Breakfast',
     tags: ['ghanaian', 'traditional'],
@@ -734,7 +734,7 @@ const recipes = [
   {
     id: '38',
     name: 'Nkontomire with Boiled Plantain',
-    image: 'https://www.startpage.com/av/proxy-image?piurl=https%3A%2F%2Ftse2.mm.bing.net%2Fth%2Fid%2FOIP.c34IYuhMtA-Y_wxOcyEm2QHaHg%3Fpid%3DApi&sp=1774949988Td5c2b691cccb91deca931356d3d43159ec40d4bd2b197eb23d240a2e24ff779b',
+    image: 'https://i1.wp.com/www.unorthodoxreviews.com/wp-content/uploads/2020/04/Plantain-and-Kontomire-Stew.jpg?w=640',
     cookingTime: '35 mins',
     category: 'Lunch',
     tags: ['ghanaian', 'healthy'],
@@ -755,7 +755,7 @@ const recipes = [
   {
     id: '39',
     name: 'Tubani (Bean Cake)',
-    image: 'https://www.startpage.com/av/proxy-image?piurl=https%3A%2F%2Ftse3.mm.bing.net%2Fth%2Fid%2FOIP.DT8hLs8UfDPKFOjawTB-pQHaHa%3Fpid%3DApi&sp=1774950029T05ab840b5f5bf19c4385bbad3632df993274157c875cbbb268b391e281f8132a',
+    image: 'https://www.chefspencil.com/wp-content/uploads/Tubaani--960x960.jpg',
     cookingTime: '1 hour',
     category: 'Snacks',
     tags: ['ghanaian', 'traditional'],
@@ -774,7 +774,7 @@ const recipes = [
   {
     id: '40',
     name: 'Mpotompoto (Cocoyam Porridge)',
-    image: 'https://www.startpage.com/av/proxy-image?piurl=https%3A%2F%2Ftse3.mm.bing.net%2Fth%2Fid%2FOIP.He__piRmgJKVtboXEVkTKQHaHa%3Fpid%3DApi&sp=1774950057Tfe3bd947e02a3a4af779bc44f5488d76278a266b7f44f19beae2881cc21bd6a2',
+    image: 'https://www.coupons.com.gh/blog/assets/images/mpoto-mpoto-recipe-3.jpg',
     cookingTime: '50 mins',
     category: 'Lunch',
     tags: ['ghanaian', 'traditional'],
