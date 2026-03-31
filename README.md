@@ -21,3 +21,4 @@ Group 29 Capstone Project
  QUALITY ASSURANCE 
 
 1.Apraku Felix Kyeremah
+2.Ernest Adjei Adjekwei
